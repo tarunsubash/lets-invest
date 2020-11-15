@@ -19,6 +19,7 @@
 		BBD4CEDB25616DF800F1805C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDA25616DF800F1805C /* ProfileViewController.swift */; };
 		BBD4CEDD25616E1C00F1805C /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDC25616E1C00F1805C /* InsightsViewController.swift */; };
 		BBD4CEDF2561722300F1805C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */; };
+		BBD4CEE425619DE700F1805C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BBD4CEDA25616DF800F1805C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BBD4CEDC25616E1C00F1805C /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
 		BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BBD4CED625616DAE00F1805C /* ExploreViewController.swift */,
+				BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				BBD4CEAB25615A7400F1805C /* SceneDelegate.swift in Sources */,
 				BBD4CEDB25616DF800F1805C /* ProfileViewController.swift in Sources */,
 				BBD4CED525616D5F00F1805C /* HomeViewController.swift in Sources */,
+				BBD4CEE425619DE700F1805C /* CategoryTableViewController.swift in Sources */,
 				BBD4CED925616DD800F1805C /* TrendingViewController.swift in Sources */,
 				BBD4CEDD25616E1C00F1805C /* InsightsViewController.swift in Sources */,
 				BBD4CEDF2561722300F1805C /* CustomTabBarController.swift in Sources */,

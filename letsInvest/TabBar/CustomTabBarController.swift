@@ -13,13 +13,16 @@ class CustomTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    private let viewControllerFactory: ViewControllerFactory
     
-    init() {
+    init(viewControllerFactory: ViewControllerFactory = ViewControllerFactory()) {
+        self.viewControllerFactory = viewControllerFactory
+        
         let homeVc = UINavigationController(rootViewController: HomeViewController())
         homeVc.title = "Home"
         homeVc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: nil)
         
-        let searchVc = UINavigationController(rootViewController: ExploreViewController())
+        let searchVc = UINavigationController(rootViewController: ExploreViewController(viewControllerFactory: viewControllerFactory))
         searchVc.title = "Explore"
         searchVc.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         
