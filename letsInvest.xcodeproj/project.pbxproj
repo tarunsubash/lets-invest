@@ -15,7 +15,7 @@
 		BBD4CECE25615E7F00F1805C /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = BBD4CECB25615E2D00F1805C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBD4CED525616D5F00F1805C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CED425616D5F00F1805C /* HomeViewController.swift */; };
 		BBD4CED725616DAE00F1805C /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CED625616DAE00F1805C /* ExploreViewController.swift */; };
-		BBD4CED925616DD800F1805C /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CED825616DD800F1805C /* TrendingViewController.swift */; };
+		BBD4CED925616DD800F1805C /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CED825616DD800F1805C /* TrendsViewController.swift */; };
 		BBD4CEDB25616DF800F1805C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDA25616DF800F1805C /* ProfileViewController.swift */; };
 		BBD4CEDD25616E1C00F1805C /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDC25616E1C00F1805C /* InsightsViewController.swift */; };
 		BBD4CEDF2561722300F1805C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */; };
@@ -23,6 +23,10 @@
 		BBD4CEE62561A1DD00F1805C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEE52561A1DD00F1805C /* CategoryTableViewCell.swift */; };
 		BBD4CEE82561A59B00F1805C /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEE72561A59B00F1805C /* CategoryViewModel.swift */; };
 		BBD4CEEB2561A9A300F1805C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEEA2561A9A300F1805C /* CategoryModel.swift */; };
+		BBD4CEEF2561AFFC00F1805C /* ThemesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEEE2561AFFB00F1805C /* ThemesCollectionViewCell.swift */; };
+		BBD4CEF12561B23C00F1805C /* ThemesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEF02561B23C00F1805C /* ThemesModel.swift */; };
+		BBD4CEF32561B2E200F1805C /* ThemesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEF22561B2E200F1805C /* ThemesCollectionViewController.swift */; };
+		BBD4CEF52561BA6D00F1805C /* ThemesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEF42561BA6D00F1805C /* ThemesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +66,7 @@
 		BBD4CECB25615E2D00F1805C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		BBD4CED425616D5F00F1805C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBD4CED625616DAE00F1805C /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		BBD4CED825616DD800F1805C /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		BBD4CED825616DD800F1805C /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
 		BBD4CEDA25616DF800F1805C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BBD4CEDC25616E1C00F1805C /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
 		BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,10 @@
 		BBD4CEE52561A1DD00F1805C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		BBD4CEE72561A59B00F1805C /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		BBD4CEEA2561A9A300F1805C /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		BBD4CEEE2561AFFB00F1805C /* ThemesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBD4CEF02561B23C00F1805C /* ThemesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesModel.swift; sourceTree = "<group>"; };
+		BBD4CEF22561B2E200F1805C /* ThemesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesCollectionViewController.swift; sourceTree = "<group>"; };
+		BBD4CEF42561BA6D00F1805C /* ThemesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +123,7 @@
 				BBD4CEE02561744B00F1805C /* TabBar */,
 				BBD4CED325616C7800F1805C /* Insights */,
 				BBD4CED225616C7200F1805C /* Profile */,
-				BBD4CED125616C6A00F1805C /* Trending */,
+				BBD4CED125616C6A00F1805C /* Trends */,
 				BBD4CED025616C5300F1805C /* Explore */,
 				BBD4CECF25616C4D00F1805C /* Home */,
 				BBD4CEA825615A7400F1805C /* AppDelegate.swift */,
@@ -155,18 +163,19 @@
 		BBD4CED025616C5300F1805C /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				BBD4CEED2561AEF400F1805C /* Themes */,
 				BBD4CEEC2561AECC00F1805C /* Category */,
 				BBD4CED625616DAE00F1805C /* ExploreViewController.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
 		};
-		BBD4CED125616C6A00F1805C /* Trending */ = {
+		BBD4CED125616C6A00F1805C /* Trends */ = {
 			isa = PBXGroup;
 			children = (
-				BBD4CED825616DD800F1805C /* TrendingViewController.swift */,
+				BBD4CED825616DD800F1805C /* TrendsViewController.swift */,
 			);
-			path = Trending;
+			path = Trends;
 			sourceTree = "<group>";
 		};
 		BBD4CED225616C7200F1805C /* Profile */ = {
@@ -202,6 +211,17 @@
 				BBD4CEEA2561A9A300F1805C /* CategoryModel.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		BBD4CEED2561AEF400F1805C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				BBD4CEEE2561AFFB00F1805C /* ThemesCollectionViewCell.swift */,
+				BBD4CEF02561B23C00F1805C /* ThemesModel.swift */,
+				BBD4CEF22561B2E200F1805C /* ThemesCollectionViewController.swift */,
+				BBD4CEF42561BA6D00F1805C /* ThemesViewModel.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,14 +327,18 @@
 			files = (
 				BBD4CEA925615A7400F1805C /* AppDelegate.swift in Sources */,
 				BBD4CEEB2561A9A300F1805C /* CategoryModel.swift in Sources */,
+				BBD4CEF52561BA6D00F1805C /* ThemesViewModel.swift in Sources */,
 				BBD4CED725616DAE00F1805C /* ExploreViewController.swift in Sources */,
+				BBD4CEF12561B23C00F1805C /* ThemesModel.swift in Sources */,
 				BBD4CEAB25615A7400F1805C /* SceneDelegate.swift in Sources */,
 				BBD4CEE82561A59B00F1805C /* CategoryViewModel.swift in Sources */,
 				BBD4CEDB25616DF800F1805C /* ProfileViewController.swift in Sources */,
 				BBD4CED525616D5F00F1805C /* HomeViewController.swift in Sources */,
 				BBD4CEE62561A1DD00F1805C /* CategoryTableViewCell.swift in Sources */,
+				BBD4CEEF2561AFFC00F1805C /* ThemesCollectionViewCell.swift in Sources */,
 				BBD4CEE425619DE700F1805C /* CategoryTableViewController.swift in Sources */,
-				BBD4CED925616DD800F1805C /* TrendingViewController.swift in Sources */,
+				BBD4CEF32561B2E200F1805C /* ThemesCollectionViewController.swift in Sources */,
+				BBD4CED925616DD800F1805C /* TrendsViewController.swift in Sources */,
 				BBD4CEDD25616E1C00F1805C /* InsightsViewController.swift in Sources */,
 				BBD4CEDF2561722300F1805C /* CustomTabBarController.swift in Sources */,
 			);

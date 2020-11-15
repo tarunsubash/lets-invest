@@ -38,7 +38,7 @@ class ExploreViewController: UIPageViewController {
     private func addViewControllersToPages() {
         pages.append(viewControllerFactory.getCategoryViewController())
         pages.append(viewControllerFactory.getThemesViewController())
-        pages.append(viewControllerFactory.getThemesViewController())
+        pages.append(viewControllerFactory.getTrendingViewController())
     }
 }
 
@@ -73,7 +73,7 @@ class ViewControllerFactory {
     }
     
     func getThemesViewController() -> UIViewController {
-        return CategoryTableViewController()
+        return ThemesCollectionViewController()
     }
     
     func getTrendingViewController() -> UIViewController {

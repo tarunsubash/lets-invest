@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrendingViewController: UIViewController {
+class TrendsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
