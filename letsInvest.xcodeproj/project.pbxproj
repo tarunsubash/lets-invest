@@ -13,6 +13,7 @@
 		BBD4CEB225615A7600F1805C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD4CEB125615A7600F1805C /* Assets.xcassets */; };
 		BBD4CEB525615A7600F1805C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD4CEB325615A7600F1805C /* LaunchScreen.storyboard */; };
 		BBD4CEC025615A7600F1805C /* letsInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEBF25615A7600F1805C /* letsInvestTests.swift */; };
+		BBD4CECE25615E7F00F1805C /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = BBD4CECB25615E2D00F1805C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BBD4CECD25615E6D00F1805C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBD4CECE25615E7F00F1805C /* SnapKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BBD4CEA525615A7400F1805C /* letsInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letsInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD4CEA825615A7400F1805C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +51,7 @@
 		BBD4CEBB25615A7600F1805C /* letsInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = letsInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD4CEBF25615A7600F1805C /* letsInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsInvestTests.swift; sourceTree = "<group>"; };
 		BBD4CEC125615A7600F1805C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD4CECB25615E2D00F1805C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 				BBD4CEA725615A7400F1805C /* letsInvest */,
 				BBD4CEBE25615A7600F1805C /* letsInvestTests */,
 				BBD4CEA625615A7400F1805C /* Products */,
+				BBD4CECA25615E2D00F1805C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +113,14 @@
 			path = letsInvestTests;
 			sourceTree = "<group>";
 		};
+		BBD4CECA25615E2D00F1805C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBD4CECB25615E2D00F1805C /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +131,7 @@
 				BBD4CEA125615A7400F1805C /* Sources */,
 				BBD4CEA225615A7400F1805C /* Frameworks */,
 				BBD4CEA325615A7400F1805C /* Resources */,
+				BBD4CECD25615E6D00F1805C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = letsInvest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = letsInvest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
