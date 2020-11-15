@@ -12,10 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .white
+        view.backgroundColor = .red
+//        let tabBarVC: UITabBarController = UITabBarController()
+//        let homeVc = HomeViewController()
+//        homeVc.title = "Home"
+//        let searchVc = SearchViewController()
+//        searchVc.title = "Explore"
+//        let trendingVc = TrendingViewController()
+//        trendingVc.title = "Trending"
+//        let profileVc = ProfileViewController()
+//        profileVc.title = "Profile"
+//        let insightsVc = InsightsViewController()
+//        insightsVc.title = "Insights"
+//        
+//        tabBarVC.setViewControllers([homeVc,
+//        searchVc,
+//        trendingVc,
+//        profileVc,
+//        insightsVc], animated: false)
+//        
+//        tabBarVC.modalPresentationStyle = .fullScreen
+//        present(tabBarVC, animated: true)
     }
 
 
 }
-
