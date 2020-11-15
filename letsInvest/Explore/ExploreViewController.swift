@@ -12,7 +12,7 @@ class ExploreViewController: UIPageViewController {
     var pages: [UIViewController] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .clear
         title = "Explore"
     }
     private let viewControllerFactory: ViewControllerFactory

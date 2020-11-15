@@ -20,6 +20,9 @@
 		BBD4CEDD25616E1C00F1805C /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDC25616E1C00F1805C /* InsightsViewController.swift */; };
 		BBD4CEDF2561722300F1805C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */; };
 		BBD4CEE425619DE700F1805C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */; };
+		BBD4CEE62561A1DD00F1805C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEE52561A1DD00F1805C /* CategoryTableViewCell.swift */; };
+		BBD4CEE82561A59B00F1805C /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEE72561A59B00F1805C /* CategoryViewModel.swift */; };
+		BBD4CEEB2561A9A300F1805C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEEA2561A9A300F1805C /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		BBD4CEDC25616E1C00F1805C /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
 		BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		BBD4CEE52561A1DD00F1805C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		BBD4CEE72561A59B00F1805C /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		BBD4CEEA2561A9A300F1805C /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +155,8 @@
 		BBD4CED025616C5300F1805C /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				BBD4CEEC2561AECC00F1805C /* Category */,
 				BBD4CED625616DAE00F1805C /* ExploreViewController.swift */,
-				BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -185,6 +191,17 @@
 				BBD4CEDE2561722300F1805C /* CustomTabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		BBD4CEEC2561AECC00F1805C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BBD4CEE325619DE700F1805C /* CategoryTableViewController.swift */,
+				BBD4CEE52561A1DD00F1805C /* CategoryTableViewCell.swift */,
+				BBD4CEE72561A59B00F1805C /* CategoryViewModel.swift */,
+				BBD4CEEA2561A9A300F1805C /* CategoryModel.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD4CEA925615A7400F1805C /* AppDelegate.swift in Sources */,
+				BBD4CEEB2561A9A300F1805C /* CategoryModel.swift in Sources */,
 				BBD4CED725616DAE00F1805C /* ExploreViewController.swift in Sources */,
 				BBD4CEAB25615A7400F1805C /* SceneDelegate.swift in Sources */,
+				BBD4CEE82561A59B00F1805C /* CategoryViewModel.swift in Sources */,
 				BBD4CEDB25616DF800F1805C /* ProfileViewController.swift in Sources */,
 				BBD4CED525616D5F00F1805C /* HomeViewController.swift in Sources */,
+				BBD4CEE62561A1DD00F1805C /* CategoryTableViewCell.swift in Sources */,
 				BBD4CEE425619DE700F1805C /* CategoryTableViewController.swift in Sources */,
 				BBD4CED925616DD800F1805C /* TrendingViewController.swift in Sources */,
 				BBD4CEDD25616E1C00F1805C /* InsightsViewController.swift in Sources */,
