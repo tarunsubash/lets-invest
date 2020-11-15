@@ -21,34 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let tabBarController: UITabBarController = UITabBarController()
-        let homeVc = UINavigationController(rootViewController: HomeViewController())
-        homeVc.title = "Home"
-        homeVc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: nil)
-        let searchVc = UINavigationController(rootViewController: ExploreViewController())
-        searchVc.title = "Explore"
-        searchVc.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        let trendingVc = UINavigationController(rootViewController: TrendingViewController())
-        trendingVc.title = "Trending"
-        trendingVc.tabBarItem.image = UIImage(systemName: "waveform.circle")
-        let profileVc = UINavigationController(rootViewController: ProfileViewController())
-        profileVc.title = "Profile"
-        profileVc.tabBarItem.image = UIImage(systemName: "person.2")
-        let insightsVc = UINavigationController(rootViewController: InsightsViewController())
-        insightsVc.title = "Insights"
-        insightsVc.tabBarItem.image = UIImage(systemName: "lightbulb")
-        
-        tabBarController.setViewControllers([homeVc,
-                                             searchVc,
-                                             trendingVc,
-                                             profileVc,
-                                             insightsVc], animated: false)
-        
-        for tabBarItem in tabBarController.tabBar.items ?? [] {
-            tabBarItem.title = ""
-        }
-        
-        window?.rootViewController = tabBarController
+        window?.rootViewController = CustomTabBarController()
         window?.makeKeyAndVisible()
     }
     
