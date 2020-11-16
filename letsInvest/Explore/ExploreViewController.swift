@@ -24,6 +24,8 @@ class ExploreViewController: UIPageViewController {
                    options: nil)
         dataSource = self
         addViewControllersToPages()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bell"), style: .plain, target: self, action: nil)
         setViewControllers([pages[0]],
                            direction: .forward,
                            animated: true,
@@ -77,6 +79,6 @@ class ViewControllerFactory {
     }
     
     func getTrendingViewController() -> UIViewController {
-        return CategoryTableViewController()
+        return TrendingStocksTableViewController()
     }
 }

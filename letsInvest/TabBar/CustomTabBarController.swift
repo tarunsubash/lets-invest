@@ -26,7 +26,7 @@ class CustomTabBarController: UITabBarController {
         searchVc.title = "Explore"
         searchVc.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         
-        let trendingVc = UINavigationController(rootViewController: TrendingViewController())
+        let trendingVc = UINavigationController(rootViewController: TrendsViewController())
         trendingVc.title = "Trending"
         trendingVc.tabBarItem.image = UIImage(systemName: "waveform.circle")
         
