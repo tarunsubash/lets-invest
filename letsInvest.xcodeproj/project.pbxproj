@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB174863256236A3003C841F /* TrendingStockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB174862256236A3003C841F /* TrendingStockModel.swift */; };
+		BB1B0DD42563CE1900FE61EA /* Parchment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1B0DD32563CE1900FE61EA /* Parchment.framework */; };
+		BB1B0DD52563CE3600FE61EA /* Parchment.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = BB1B0DD32563CE1900FE61EA /* Parchment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB1B0DD82563DC6600FE61EA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B0DD72563DC6600FE61EA /* ViewControllerFactory.swift */; };
 		BB2A0A5D25620ACF008FC204 /* TrendingStocksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A0A5C25620ACF008FC204 /* TrendingStocksTableViewCell.swift */; };
 		BB2A0A5F25621523008FC204 /* TrendingStocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A0A5E25621523008FC204 /* TrendingStocksViewModel.swift */; };
 		BBD4CEA925615A7400F1805C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4CEA825615A7400F1805C /* AppDelegate.swift */; };
@@ -50,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BB1B0DD52563CE3600FE61EA /* Parchment.framework in Copy Frameworks */,
 				BBD4CECE25615E7F00F1805C /* SnapKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -59,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		BB174862256236A3003C841F /* TrendingStockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingStockModel.swift; sourceTree = "<group>"; };
+		BB1B0DD32563CE1900FE61EA /* Parchment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parchment.framework; path = Carthage/Build/iOS/Parchment.framework; sourceTree = "<group>"; };
+		BB1B0DD72563DC6600FE61EA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		BB2A0A5C25620ACF008FC204 /* TrendingStocksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingStocksTableViewCell.swift; sourceTree = "<group>"; };
 		BB2A0A5E25621523008FC204 /* TrendingStocksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingStocksViewModel.swift; sourceTree = "<group>"; };
 		BBD4CEA525615A7400F1805C /* letsInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letsInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1B0DD42563CE1900FE61EA /* Parchment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1B0DD62563DC5000FE61EA /* ViewControllerFactory */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B0DD72563DC6600FE61EA /* ViewControllerFactory.swift */,
+			);
+			path = ViewControllerFactory;
+			sourceTree = "<group>";
+		};
 		BBD4CE9C25615A7400F1805C = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +143,7 @@
 		BBD4CEA725615A7400F1805C /* letsInvest */ = {
 			isa = PBXGroup;
 			children = (
+				BB1B0DD62563DC5000FE61EA /* ViewControllerFactory */,
 				BBD4CEE02561744B00F1805C /* TabBar */,
 				BBD4CED325616C7800F1805C /* Insights */,
 				BBD4CED225616C7200F1805C /* Profile */,
@@ -155,6 +171,7 @@
 		BBD4CECA25615E2D00F1805C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB1B0DD32563CE1900FE61EA /* Parchment.framework */,
 				BBD4CECB25615E2D00F1805C /* SnapKit.framework */,
 			);
 			name = Frameworks;
@@ -360,6 +377,7 @@
 				BBD4CEE62561A1DD00F1805C /* CategoryTableViewCell.swift in Sources */,
 				BBD4CEEF2561AFFC00F1805C /* ThemesCollectionViewCell.swift in Sources */,
 				BBD4CEE425619DE700F1805C /* CategoryTableViewController.swift in Sources */,
+				BB1B0DD82563DC6600FE61EA /* ViewControllerFactory.swift in Sources */,
 				BB174863256236A3003C841F /* TrendingStockModel.swift in Sources */,
 				BBD4CEF32561B2E200F1805C /* ThemesCollectionViewController.swift in Sources */,
 				BBD4CED925616DD800F1805C /* TrendsViewController.swift in Sources */,

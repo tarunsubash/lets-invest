@@ -15,6 +15,7 @@ class TrendingStocksTableViewController: UITableViewController {
     init(viewModel: TrendingStocksViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        title = "Trending"
     }
     
     convenience init() {

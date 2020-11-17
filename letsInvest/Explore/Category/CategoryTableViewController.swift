@@ -15,6 +15,7 @@ class CategoryTableViewController: UITableViewController {
     init(categoryViewModel: CategoryViewable) {
         self.categoryViewModel = categoryViewModel
         super.init(nibName: nil, bundle: nil)
+        title = "Categories"
     }
     
     convenience init() {

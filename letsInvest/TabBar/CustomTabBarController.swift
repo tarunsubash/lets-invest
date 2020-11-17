@@ -15,7 +15,7 @@ class CustomTabBarController: UITabBarController {
     }
     private let viewControllerFactory: ViewControllerFactory
     
-    init(viewControllerFactory: ViewControllerFactory = ViewControllerFactory()) {
+    init(viewControllerFactory: ViewControllerFactory = ViewControllerFactoryImpl()) {
         self.viewControllerFactory = viewControllerFactory
         
         let homeVc = UINavigationController(rootViewController: HomeViewController())

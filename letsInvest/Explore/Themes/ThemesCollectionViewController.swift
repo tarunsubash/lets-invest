@@ -16,6 +16,7 @@ class ThemesCollectionViewController: UIViewController {
     init(themesViewModel: ThemesViewable) {
         self.themesViewModel = themesViewModel
         super.init(nibName: nil, bundle: nil)
+        title = "Themes"
     }
     
     convenience init() {

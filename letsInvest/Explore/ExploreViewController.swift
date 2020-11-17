@@ -6,79 +6,59 @@
 //  Copyright © 2020 Subash. All rights reserved.
 //
 
+import Parchment
+import SnapKit
 import UIKit
 
-class ExploreViewController: UIPageViewController {
+class ExploreViewController: UIViewController {
     var pages: [UIViewController] = []
+    private let viewControllerFactory: ViewControllerFactory
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .clear
+        view.backgroundColor = .white
         title = "Explore"
+        setUpNavigationBar()
+        let pagingViewController = PagingViewController(viewControllers: childViewControllers())
+        setUpPaging(pagingViewController)
     }
-    private let viewControllerFactory: ViewControllerFactory
     
     init(viewControllerFactory: ViewControllerFactory) {
         self.viewControllerFactory = viewControllerFactory
-        super.init(transitionStyle: .scroll,
-                   navigationOrientation: .horizontal,
-                   options: nil)
-        dataSource = self
-        addViewControllersToPages()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: nil)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bell"), style: .plain, target: self, action: nil)
-        setViewControllers([pages[0]],
-                           direction: .forward,
-                           animated: true,
-                           completion: nil)
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    private func addViewControllersToPages() {
-        pages.append(viewControllerFactory.getCategoryViewController())
-        pages.append(viewControllerFactory.getThemesViewController())
-        pages.append(viewControllerFactory.getTrendingViewController())
-    }
-}
-
-extension ExploreViewController: UIPageViewControllerDataSource {
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if let vcIndex = pages.firstIndex(of: viewController) {
-            if vcIndex == 0 {
-                return pages.last
-            } else {
-                return pages[vcIndex - 1]
-            }
+    private func setUpPaging(_ pagingViewController: PagingViewController) {
+        addChild(pagingViewController)
+        view.addSubview(pagingViewController.view)
+        pagingViewController.didMove(toParent: self)
+        pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        pagingViewController.menuItemSize = .sizeToFit(minWidth: 40, height: 50)
+        pagingViewController.menuItemSpacing = 10
+        pagingViewController.menuTransition = .scrollAlongside
+        pagingViewController.indicatorClass = PagingIndicatorView.self
+        pagingViewController.indicatorColor = .purple
+        pagingViewController.selectedTextColor = .purple
+        pagingViewController.view.snp.makeConstraints { (make) in
+            make.leading.trailing.bottom.equalToSuperview()
+            make.top.equalTo(80)
         }
-        return nil
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if let vcIndex = pages.firstIndex(of: viewController) {
-            if vcIndex < self.pages.count - 1 {
-                return pages[vcIndex + 1]
-            } else {
-                return pages.first
-            }
-        }
-        return nil
-    }
-}
-
-class ViewControllerFactory {
-    
-    func getCategoryViewController() -> UIViewController {
-        return CategoryTableViewController()
+    private func setUpNavigationBar() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bell"), style: .plain, target: self, action: nil)
     }
     
-    func getThemesViewController() -> UIViewController {
-        return ThemesCollectionViewController()
-    }
-    
-    func getTrendingViewController() -> UIViewController {
-        return TrendingStocksTableViewController()
+    private func childViewControllers() -> [UIViewController] {
+        var vc: [UIViewController] = []
+        vc.append(viewControllerFactory.getCategoryViewController())
+        vc.append(viewControllerFactory.getThemesViewController())
+        vc.append(viewControllerFactory.getTrendingViewController())
+        return vc
     }
 }

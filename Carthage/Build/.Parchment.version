@@ -1,0 +1,10 @@
+{
+  "commitish" : "v2.4.0",
+  "iOS" : [
+    {
+      "name" : "Parchment",
+      "hash" : "5242272983e88f1a610c17136d2a792bb9ce4644ac6f02a7609b26d23a8ef733",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}
